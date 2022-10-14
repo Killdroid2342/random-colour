@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
+import './RandomColor.css';
 
 const RandomColor = () => {
-  const [color, setColor] = useState('#000');
+  const [color, setColor] = useState('#00000');
 
   const RGB = () => Math.floor(Math.random() * 256);
 
@@ -25,9 +26,11 @@ const RandomColor = () => {
   };
 
   return (
-    <div className='border-2 border-black'>
-      {color}
-      <button onClick={Gen}>Click For New Color</button>
+    <div className='outer-div' style={{ backgroundColor: color }}>
+      <div className='color-name'>{color}</div>
+      <button onClick={Gen} className='btn-gen'>
+        Click For New Color
+      </button>
     </div>
   );
 };
