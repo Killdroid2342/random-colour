@@ -1,6 +1,28 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: black;
 }
+@layer components {
+  .btn-color {
+    @apply rounded-md border-2 border-white ml-5 mt-3;
+  }
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

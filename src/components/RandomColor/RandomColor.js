@@ -1,7 +1,25 @@
 import React, { useState } from 'react';
 
 const RandomColor = () => {
-  const [color, setColor] = useState('#00000');
+  const [color, setColor] = useState('#000000');
+
+  const blackClick = () => {
+    setColor('#000000');
+  };
+  const whiteClick = () => {
+    setColor('#ffffff');
+    console.log('asdsd');
+    // setColor(color, '#720000');
+  };
+  const blueClick = () => {
+    setColor('#151A7B');
+  };
+  const redClick = () => {
+    setColor('#720000');
+  };
+  const greenClick = () => {
+    setColor('#169B1E');
+  };
 
   const RGB = () => Math.floor(Math.random() * 256);
 
@@ -26,8 +44,10 @@ const RandomColor = () => {
   return (
     <React.Fragment>
       <div
-        className='border-2 border-white flex flex-col h-52 w-80 text-white m-96 font-bold font-Verdana rounded-md'
-        style={{ backgroundColor: color }}
+        className='border-2 border-white flex flex-col h-52 w-80 text-white ml-80 font-bold font-Verdana rounded-md mt-80'
+        style={{
+          backgroundColor: color,
+        }}
       >
         <div className='text-2xl ml-28 mt-10'>{color}</div>
         <button
@@ -37,8 +57,22 @@ const RandomColor = () => {
           Click For New Color
         </button>
       </div>
-      <div className='theme-options'>
-        <div className='bg-black' />
+      <div className='border-2  border-white h-14 w-80 ml-80 mt-4 rounded-md text-white'>
+        <button className='btn-color' onClick={blackClick}>
+          Black
+        </button>
+        <button className='btn-color' onClick={whiteClick}>
+          White
+        </button>
+        <button className='btn-color' onClick={blueClick}>
+          Blue
+        </button>
+        <button className='btn-color' onClick={redClick}>
+          Red
+        </button>
+        <button className='btn-color' onClick={greenClick}>
+          Green
+        </button>
       </div>
     </React.Fragment>
   );
