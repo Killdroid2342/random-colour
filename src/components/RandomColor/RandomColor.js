@@ -57,6 +57,12 @@ const RandomColor = () => {
         >
           Click For New Color
         </button>
+        <button
+          className='border-2 border-zinc-600 rounded-md mt-4 w-52 ml-16 pb-1 pt-1'
+          onClick={() => navigator.clipboard.writeText(color)}
+        >
+          Copy Color
+        </button>
       </div>
       <div className='border-2 border-zinc-500 h-14 w-80 ml-80 mt-4 rounded-md text-zinc-500'>
         <button className='btn-color' onClick={blackClick}>
