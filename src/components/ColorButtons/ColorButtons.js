@@ -8,20 +8,35 @@ const ColorButtons = ({
   greenClick,
 }) => {
   return (
-    <div className='border-2 border-zinc-500 mt-4 rounded-md text-zinc-500 p-3'>
-      <button className='btn-color p-1' onClick={blackClick}>
+    <div className='border-2 border-zinc-500 text-zinc-500 p-5 rounded-md mt-5'>
+      <button
+        className='rounded-md border-2 border-zinc-500 p-2 font-bold m-2'
+        onClick={blackClick}
+      >
         Black
       </button>
-      <button className='btn-color p-1' onClick={whiteClick}>
+      <button
+        className='rounded-md border-2 border-zinc-500 p-2 font-bold m-2'
+        onClick={whiteClick}
+      >
         White
       </button>
-      <button className='btn-color p-1' onClick={blueClick}>
+      <button
+        className='rounded-md border-2 border-zinc-500 p-2 font-bold m-2'
+        onClick={blueClick}
+      >
         Blue
       </button>
-      <button className='btn-color p-1' onClick={redClick}>
+      <button
+        className='rounded-md border-2 border-zinc-500 p-2 font-bold m-2'
+        onClick={redClick}
+      >
         Red
       </button>
-      <button className='btn-color p-1 mr-4' onClick={greenClick}>
+      <button
+        className='rounded-md border-2 border-zinc-500 p-2 font-bold m-2'
+        onClick={greenClick}
+      >
         Green
       </button>
     </div>
