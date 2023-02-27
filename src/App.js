@@ -48,7 +48,7 @@ function App() {
       <h1 className='text-white font-bold font-Verdana text-center mt-60 text-4xl'>
         Random Color Generator
       </h1>
-      <div className=' flex flex-col items-center justify-center'>
+      <div className=' flex flex-col items-center'>
         <Main color={color} Gen={Gen} />
         <ColorButtons
           blackClick={blackClick}
