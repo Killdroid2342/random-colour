@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Random-Colour
 
 This project is a creative endeavor that offers users the exciting capability to generate random colors. With just a simple click or action, users can witness a burst of vibrant and unpredictable hues. Whether it's for artistic inspiration, design exploration, or just to add a splash of spontaneity to your day, this project promises an engaging and visually stimulating experience that encourages your creativity to flourish.
@@ -46,3 +47,6 @@ https://random-colour.vercel.app/
 ## Built With
 
 - React (JavaScript)
+=======
+This creates a random color if you click a button.
+>>>>>>> dd2d19eaa630331e3c37123ee8a3d981d9be1f7f
